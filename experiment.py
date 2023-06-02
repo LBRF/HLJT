@@ -223,7 +223,9 @@ class HLJT(klibs.Experiment):
 
 
 	def clean_up(self):
-		pass
+		msg1 = message("You're all done, thanks for participating!", blit_txt=False)
+		msg2 = message("Press any key to exit.", blit_txt=False)
+		wait_msg(msg1, msg2, delay=1.5)
 
 
 
